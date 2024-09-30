@@ -8,6 +8,7 @@ nav{
     background-color:rgb(203, 203, 203);
     width: 100%;
 }
+
 ul {
     list-style-type: none;
     margin: 0 20% 0 20%;
@@ -35,11 +36,13 @@ ul {
 body{
     background-color: rgb(230, 230, 230);
 
+
 }
 
   h1{
     font-size:6em;
     text-align: center;
+    line-height: 100%;;
   }
   
 h3{
@@ -70,7 +73,7 @@ h3.line:hover {
 .setting {
         font-family: "Inter", sans-serif;
         color:black;
-        margin: 10% 20% 10% 20%;
+        margin: 10% 25% 15% 25%;
         line-height: 150%;
         font-size:1em;
 }
@@ -80,9 +83,14 @@ a:visited{
     color:green;
 }
 
-nav a:visited {
-    color:white;
+nav a:hover {
+    color:blue;
 }
+nav a:active {
+  color:red;
+}
+
+
 
 #introbox{
     background-color: white;
