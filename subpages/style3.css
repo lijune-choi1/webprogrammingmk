@@ -126,28 +126,36 @@ animation: anim2 5s linear infinite alternate;
 
 /*rotate*/
 #second{
+    transition-duration: 2s;
     transform: skewX(-20deg) scaleY(2);
 }
 
 #second:hover{
+    transition-duration: 2s;
     transform: skewX(20deg) scaleY(2);
 }
 #third{
+    transition-duration: 2s;
     transform: rotate(-10deg) scale(0.5,1.4);
 }
 #third:hover{
+    transition-duration: 2s;
     transform: rotate(10deg) scale(0.5,1.4);
 }
 #fourth{
+    transition-duration: 2s;
     transform: skewX(20deg) scaleY(2);
 }
 #fourth:hover{
+    transition-duration: 2s;
     transform: skewX(-20deg) scaleY(2);
 }
 #fifth{
+    transition-duration: 2s;
     transform: rotate(40deg) skewY(-20deg);
 }
 #fifth:hover{
+    transition-duration: 2s;
     transform: rotate(-40deg) skewY(-20deg);
 }
 
