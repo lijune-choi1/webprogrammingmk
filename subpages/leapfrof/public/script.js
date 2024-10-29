@@ -39,13 +39,13 @@ function parseCSV(csvText) {
 
         if (applicantCount > 200) {
             applicationStatus = 'outnumbered';
-            applicationEmoji = '<img src="/images/sad-frog.png" style="width:100px;"';
+            applicationEmoji = '<img src="./images/sad-frog.png" style="width:100px;"';
         } else if (applicantCount < 20) {
             applicationStatus = 'apply now';
-            applicationEmoji = '<img src="/images/happy-frog.png" style="width:100px;"';
+            applicationEmoji = '<img src="./images/happy-frog.png" style="width:100px;"';
         } else {
             applicationStatus = 'apply as soon as you can';
-            applicationEmoji = '<img src="/images/normal-frog.png" style="width:100px;"';
+            applicationEmoji = '<img src="./images/normal-frog.png" style="width:100px;"';
         }
 
         // Return parsed job object
@@ -118,11 +118,11 @@ function createJobElement(job, index) {
     // Determine the hover icon
     let hoverIcon;
     if (job.applicantCount > 200) {
-        hoverIcon = '<img src="/images/f2-s.png" style="width:50px;">';
+        hoverIcon = '<img src="./images/f2-s.png" style="width:50px;">';
     } else if (job.applicantCount < 20) {
-        hoverIcon = '<img src="/images/f2-f.png" style="width:50px;">';
+        hoverIcon = '<img src="./images/f2-f.png" style="width:50px;">';
     } else {
-        hoverIcon = '<img src="/images/f2-m.png" style="width:50px;">';
+        hoverIcon = '<img src="./images/f2-m.png" style="width:50px;">';
     }
 
     jobElement.innerHTML = `
@@ -214,11 +214,11 @@ function showJobDetails(job, index) {
     const emojiBackground = document.getElementById('emoji-background');
     let emojiHtml;
     if (job.applicantCount > 200) {
-        emojiHtml = '<img src="/images/f2-s.png" class="background-emoji-img">';
+        emojiHtml = '<img src="./images/f2-s.png" class="background-emoji-img">';
     } else if (job.applicantCount < 20) {
-        emojiHtml = '<img src="/images/f2-f.png" class="background-emoji-img">';
+        emojiHtml = '<img src="./images/f2-f.png" class="background-emoji-img">';
     } else {
-        emojiHtml = '<img src="/images/f2-m.png" class="background-emoji-img">';
+        emojiHtml = '<img src="./images/f2-m.png" class="background-emoji-img">';
     }
 
     // Create and append emoji elements
