@@ -91,15 +91,7 @@ function createJobElement(job, index) {
     };
     
     // Create tag HTML with proper styling
-    // const createTagHTML = (tag) => {
-    //     const isFormal = isFormatTag(tag);
-    //     const tagClass = isFormal ? 'formal' : 'casual';
-    //     const tagStyle = isFormal ? 
-    //         'background-color: #000; color: white; font-family: Inter, sans-serif;' : 
-    //         'background-color: rgba(255, 255, 255, 0.413); color: black; font-family: "Coming Soon", cursive; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);';
-        
-    //     return `<span class="job-tag ${tagClass}" style="${tagStyle}">${tag}</span>`;
-    // };
+
     function createTagHTML(tag) {
         const formalTags = ['LA Based', 'NY Based', 'Identity', 'Art Direction', 'Marketing Social Media', 
                            'UI UX', 'Motion', 'Digital Content', 'Non-profit', 'Web', 'Research'];
@@ -129,7 +121,7 @@ function createJobElement(job, index) {
         <div class="rate-container">
             <p class="rate-label">Rate per year</p>
             <div class="frog-icon ${job.frogState.toLowerCase()}">
-                <img src="/images/${job.frogState.toLowerCase()}-frog.png" style="width:50px;">
+                <img src="./images/${job.frogState.toLowerCase()}-frog.png" style="width:50px;">
             </div>
         </div>
         <p class="rate">${job.pay}</p>
@@ -188,7 +180,7 @@ function showJobDetails(job, index) {
         <div id="emoji-background"></div>
         <div id="modalApplicationStatus">
             <div style="display: flex; align-items: center; justify-content: center; gap: 20px;">
-                <img src="/images/${job.frogState.toLowerCase()}-frog.png" style="width:50px;">
+                <img src="./images/${job.frogState.toLowerCase()}-frog.png" style="width:50px;">
                 <div>
                     <p>Application Status: ${job.applicationStatus}</p>
                     <p>Applicant Count: ${job.applicantCount}</p>
@@ -406,15 +398,15 @@ document.addEventListener('DOMContentLoaded', function() {
             <p>This is a fixed reminder. You can add new editable notes by clicking the button in the bottom right corner.</p>
             <p>You can also hover over the emojis to see the number of applicants.</p>
             <div style="display: flex; align-items: center; margin-top: 10px;">
-                <img src="/images/f2-s.png" style="width: 30px; height: 30px; margin-right: 10px;">
+                <img src="./images/f2-s.png" style="width: 30px; height: 30px; margin-right: 10px;">
                 <span>= 200+ Applicants</span>
             </div>
             <div style="display: flex; align-items: center; margin-top: 10px;">
-                <img src="/images/f2-m.png" style="width: 30px; height: 30px; margin-right: 10px;">
+                <img src="./images/f2-m.png" style="width: 30px; height: 30px; margin-right: 10px;">
                 <span>= 20~200 Applicants</span>
             </div>
             <div style="display: flex; align-items: center; margin-top: 10px;">
-                <img src="/images/f2-f.png" style="width: 30px; height: 30px; margin-right: 10px;">
+                <img src="./images/f2-f.png" style="width: 30px; height: 30px; margin-right: 10px;">
                 <span>= Less than 20 Applicants</span>
             </div>
         `;
