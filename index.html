@@ -1,12 +1,149 @@
-<!doctype html>
-<html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>My test page</title>
-  </head>
-  <body>
-   <h1>Hello World! </h1> 
-    <img src="images/firefox-icon.png" alt="My test image" />
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Index</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 2rem;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #f0f0f0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .section {
+            margin: 2rem 0;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-2px);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #333;
+            border-bottom: 4px solid #333;
+            padding-bottom: 0.5rem;
+        }
+
+        h2 {
+            color: #444;
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #666;
+            font-size: 1.1rem;
+            margin: 1rem 0 0.5rem;
+        }
+
+        .links {
+            display: grid;
+            gap: 0.5rem;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            padding: 0.5rem;
+            border-radius: 4px;
+            transition: background-color 0.2s ease;
+            display: inline-block;
+        }
+
+        a:hover {
+            background-color: #f0f0f0;
+        }
+
+        .file-info {
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Project Navigator</h1>
+        
+        <div class="section">
+            <h2>Common</h2>
+            <div class="links">
+                <a href="common/index.html">index.html <span class="file-info">(4 KB)</span></a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Project Proposal</h2>
+            <div class="links">
+                <a href="project1proposal/Proposal.pdf">Proposal.pdf <span class="file-info">(483 KB)</span></a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Projects</h2>
+            
+            <h3>Exercise 1</h3>
+            <div class="links">
+                <a href="projects/e1/index.html">index.html <span class="file-info">(316 bytes)</span></a>
+            </div>
+
+            <h3>Exercises 2-3</h3>
+            <div class="links">
+                <a href="projects/e2-3/html.html">html.html <span class="file-info">(4 KB)</span></a>
+                <a href="projects/e2-3/html2.html">html2.html <span class="file-info">(6 KB)</span></a>
+                <a href="projects/e2-3/html3.html">html3.html <span class="file-info">(5 KB)</span></a>
+                <a href="projects/e2-3/html4.html">html4.html <span class="file-info">(5 KB)</span></a>
+                <a href="projects/e2-3/style.css">style.css <span class="file-info">(2 KB)</span></a>
+            </div>
+
+            <h3>Exercises 4-5</h3>
+            <div class="links">
+                <a href="projects/e4+5/style3.css">style3.css <span class="file-info">(3 KB)</span></a>
+                <a href="projects/e4+5/transform.html">transform.html <span class="file-info">(4 KB)</span></a>
+            </div>
+
+            <h3>Exercise 6</h3>
+            <div class="links">
+                <a href="projects/e6/js1.html">js1.html <span class="file-info">(2 KB)</span></a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>P1: Hyperlinked Set</h2>
+            <h3>Public</h3>
+            <div class="links">
+                <a href="https://leapfrof.vercel.app/">Vercel Page for Website <span class="file-info">(2 KB)</span></a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>P2: Changeover Time</h2>
+            <div class="links">
+                <a href="projects/p2-changeover-time/card.html">card.html <span class="file-info">(3 KB)</span></a>
+                <a href="projects/p2-changeover-time/script.js">script.js <span class="file-info">(13 KB)</span></a>
+                <a href="projects/p2-changeover-time/style.css">style.css <span class="file-info">(15 KB)</span></a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Topic Presentation</h2>
+            <div class="links">
+                <a href="topicpresentation/JuneChoi_ExploringPlatform.pdf">JuneChoi_ExploringPlatform.pdf <span class="file-info">(1.9 MB)</span></a>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
